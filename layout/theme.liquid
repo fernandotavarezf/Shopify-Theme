@@ -344,27 +344,29 @@
         recipientFormCollapsed: `{{ 'recipient.form.collapsed' | t }}`,
       };
 
-##Changes made here
 
-lang="{{ shop.locale }}">
+<!DOCTYPE html>
+<html lang="{{ shop.locale }}">
 <head>
-  <!-- Original head content preserved -->
+  <!-- Existing head content -->
   {{ content_for_header }}
-  <!-- Add any additional head content here if needed -->
 </head>
 <body class="{{ body_class }}">
-  <div id="shopify-section-header" class="shopify-section">
-    <!-- Original header content preserved -->
+  
+  <!-- Existing content before changes -->
 
-    <!-- Navigation Bar (Add or modify as needed) -->
+  <!-- ##Changes made here -->
+  <header class="site-header" role="banner">
+    <!-- Navigation Bar -->
     <ul class="navigation-menu">
         <li><a href="#link1">Link 1</a></li>
         <li><a href="#link2">Link 2</a></li>
         <!-- Add more list items as needed -->
     </ul>
-  </div>
+  </header>
+
   <main role="main">
-    <!-- Split Layout (Add where appropriate) -->
+    <!-- Split Layout -->
     <div class="split-layout">
         <div class="left-side">
             <!-- Content for the left side (e.g., an image or text) -->
@@ -374,24 +376,18 @@ lang="{{ shop.locale }}">
         </div>
     </div>
 
-    <!-- Original main content preserved -->
+    <!-- Existing main content -->
     {{ content_for_layout }}
   </main>
 
   <footer role="contentinfo">
-    <!-- Original footer content preserved -->
+    <!-- Existing footer content -->
   </footer>
 
-  <!-- Call-to-Action Button (Place where appropriate) -->
+  <!-- Call-to-Action Button -->
   <button class="button-cta">Get Started</button>
 
-  <!-- Original scripts and Shopify objects preserved -->
+  <!-- Existing scripts and Shopify objects -->
   {{ content_for_footer }}
-
-    </script>
- 
-    {%- if settings.predictive_search_enabled -%}
-      <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
-    {%- endif -%}
-  </body>
+</body>
 </html>
