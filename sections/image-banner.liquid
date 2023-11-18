@@ -3,7 +3,7 @@
   <div class="split-layout">
     <!-- Left: Image -->
     <div class="split-left">
-      {{ section.settings.image | image_tag }}
+      <img src="{{ section.settings.image | default: 'your-placeholder-image-url.jpg' }}" alt="Banner Image">
     </div>
 
     <!-- Middle: Text -->
