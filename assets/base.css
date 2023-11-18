@@ -3593,3 +3593,32 @@ footer {
     padding: 20px;
     text-align: center;
 }
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #fff;
+}
+
+.site-header__logo img {
+  max-height: 50px; /* Adjust based on your logo size */
+}
+
+.site-nav {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.site-nav__item {
+  margin: 0 10px;
+}
+
+.site-nav__link {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Add responsive design styles if needed */
