@@ -3640,3 +3640,30 @@ footer {
     flex-direction: column;
   }
 }
+.image-banner {
+  width: 100%;
+}
+
+.banner-split-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; /* Evenly space the content */
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.split-left, .split-middle, .split-right {
+  flex: 1; /* Each section takes equal space */
+  padding: 20px;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .banner-split-layout {
+    flex-direction: column;
+  }
+  .split-left, .split-middle, .split-right {
+    flex-basis: 100%;
+  }
+}
