@@ -45,3 +45,74 @@ document.addEventListener('shopify:section:deselect', () => hideProductModal());
 document.addEventListener('shopify:inspector:activate', () => hideProductModal());
 
 document.addEventListener('shopify:inspector:deactivate', () => hideProductModal());
+/* Split Layout */
+.split-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.left-side {
+    /* Style as needed for the image section */
+}
+
+.right-side {
+    /* Style as needed for the product display section */
+}
+
+/* Typography */
+body {
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+h1 {
+    font-size: 2em; /* Adjust as needed */
+    font-weight: bold;
+}
+
+/* Color Scheme */
+.button-cta {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-cta:hover {
+    background-color: darkred;
+}
+
+/* Navigation Bar */
+.navigation-menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navigation-menu li {
+    display: inline-block;
+    margin-right: 20px; /* Adjust spacing as needed */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .split-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .navigation-menu li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
