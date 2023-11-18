@@ -3622,3 +3622,21 @@ footer {
 }
 
 /* Add responsive design styles if needed */
+
+.banner-split-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px; /* Adjust the space between columns */
+}
+
+.split-left, .split-right {
+  flex: 1; /* Each side takes up half the space */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .banner-split-layout {
+    flex-direction: column;
+  }
+}
