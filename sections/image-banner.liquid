@@ -2,11 +2,16 @@
   <div class="image-banner" style="background-image: url('{{ section.settings.image | img_url: '2000x' }}');">
     <div class="page-width">
       <div class="image-banner__content rte">
-        
+
         <!-- Split Layout Container -->
         <div class="banner-split-layout">
           <div class="split-left">
-            <!-- Left Side Content -->
+            <!-- Left Side Content: Image -->
+            <img src="{{ 'left-side-image.jpg' | asset_url }}" alt="Left Side Image">
+          </div>
+
+          <div class="split-middle">
+            <!-- Middle Content: Text -->
             <h2>{{ section.settings.heading }}</h2>
             <p>{{ section.settings.text }}</p>
             {% if section.settings.button_label != blank %}
@@ -15,9 +20,11 @@
               </a>
             {% endif %}
           </div>
+
           <div class="split-right">
-            <!-- Right Side Content (Add your content here) -->
-            <p>Additional content or promotional info here.</p>
+            <!-- Right Side Content: Product Display -->
+            <!-- Add product display or additional content here -->
+            <p>Product display or additional content.</p>
           </div>
         </div>
         <!-- End of Split Layout Container -->
