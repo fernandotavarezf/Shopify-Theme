@@ -3499,3 +3499,24 @@ details-disclosure > details {
     --border-offset: 0px; /* Prevent the border from growing on buttons when this effect is on. */
   }
 }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    text-decoration: none solid rgb(0, 0, 0);
+    word-spacing: 0px;
+}
+body {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+.container {
+    height: 776px;
+    width: 1516px;
+    box-sizing: border-box;
+}
+.element {
+    display: block;
+    transform: none;
+    transition: all 0s ease 0s;
+    outline: rgb(255, 0, 0) dashed 0.8px;
+}
